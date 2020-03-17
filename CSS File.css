@@ -1,0 +1,171 @@
+/*-----title-----*/
+h1 {
+	color: navy;
+	text-align: center;
+}
+
+a.title {
+	background-color: transparent;
+  	text-decoration: none;
+}
+
+/*-----body-----*/
+body {
+	background-color:  #80cccc;
+}
+
+
+/*-----flexible box for "title and menu bar"-----*/
+.titleandmenubarpart {
+  	display: flex;
+  	flex-wrap: nowrap;
+}
+.titleandmenubarpart .boxtitle {
+  	width: 35%;
+  	text-align: left;
+	float: left;
+	padding: 10px;
+
+}
+.titleandmenubarpart .boxmenubar {
+  	width: 65%;
+	float: left;
+  	padding: 5px;
+}
+
+
+/*-----menu bar-----*/     
+ul.menu li.menu {
+	background: #269c9c;
+	padding: 8px;
+	margin: 0px;
+}
+li.menu {
+        float: right;
+	list-style-type: none; //adjust  styles of dot before buttons
+}
+li.menu a.menu {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+}          
+li.menu a.menu:hover {
+        background-color: #26a8a8;
+}
+
+
+/*-----flexible box for "blog part"-----*/
+.blogpart {
+  	display: flex;
+  	flex-wrap: nowrap;
+  	background-color: #59bdbd;
+}
+.blogpart .boxannouncement {
+  	background-color: #f1f1f1;
+  	width: 20%;
+  	margin: 5px;
+  	text-align: center;
+  	line-height: 75px; // height between lines
+  	font-size: 300px; //word font
+}
+.blogpart .boxadvertisement {
+  	background-color: #59bdbd;
+  	width: 80%;
+  	margin: 5px;
+  	text-align: center;
+}
+
+
+/*-----flexible box for "product part"-----*/
+.productpart {
+  	display: flex;
+  	flex-wrap: nowrap;
+  	background-color: #59bdbd;
+}
+.productpart .boxcategory {
+  	background-color: #59bdbd;
+  	width: 15%;
+  	margin: 5px;
+  	text-align: center;
+}
+.productpart .boxproductdetail {
+ 	background-color: #59bdbd;
+  	width: 85%;
+	margin: 5px;
+ 	text-align: center;
+}
+
+
+/*-----category links-----*/
+a.category:link {
+  	color: green;
+  	background-color: transparent;
+  	text-decoration: none;
+}
+a.category:visited {
+  	color: blue;
+  	background-color: transparent;
+  	text-decoration: none;
+}
+a.category:hover {
+  	color: red;
+  	background-color: transparent;
+  	text-decoration: none;
+}
+a.category:active {
+  	color: red;
+  	background-color: transparent;
+  	text-decoration: underline;
+}
+
+
+/*-----table part-----*/
+table {
+	width: 100%;
+}
+#BestSellers {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+}
+#BestSeller td, #BestSeller th {
+	border: 1px solid #ddd;
+	padding: 8px;
+
+}
+#BestSeller tr:nth-child(even){
+	background-color: #ffffff;
+}
+#BestSeller tr:hover {
+	background-color: #ddd;
+}
+#BestSeller th {
+  	padding-top: 12px;
+  	padding-bottom: 12px;
+  	text-align: left;
+  	background-color: #269c9c;
+  	color: white;
+}
+
+
+/*-----flexible box for "contact part"-----*/
+.contactpart {
+  	display: flex;
+  	flex-wrap: nowrap;
+  	background-color:  #80cccc;
+}
+.contactpart .boxaddress {
+  	background-color:  #80cccc;
+  	width: 70%;
+  	margin: 5px;
+  	text-align: left;
+}
+.contactpart .boxsocialmedialinks {
+  	background-color: #269c9c;
+  	width: 30%;
+  	margin: 5px;
+	padding: 13px 0px 0px 150px; // top, right, bottom, left
+}
+
+
